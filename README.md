@@ -1,190 +1,168 @@
 # Harmonic Eccentricity — Generative Art
 
-[![Live Demo](https://img.shields.io/badge/demo-live-green?style=for-the-badge)](https://reyrove.github.io/Harmonic-Eccentricity-Generative-Art)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-
-> **Generative hue harmony art.** Each refresh creates a unique radial composition of geometric shapes with harmonious color palettes, dark backgrounds, and organic patterns.
-
-## 🎨 Live Demo
-
-<div align="center">
-  <a href="https://reyrove.github.io/Harmonic-Eccentricity-Generative-Art" target="_blank">
-    <img src="demo-screenshot.jpg" alt="Harmonic Eccentricity Website Demo" width="800" style="border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.4);"/>
-  </a>
-  <br><br>
-  <a href="https://reyrove.github.io/Harmonic-Eccentricity-Generative-Art" target="_blank">
-    <img src="https://img.shields.io/badge/🌐_View_Live_Demo-0a0a0a?style=for-the-badge&logo=githubpages&logoColor=white&color=c9a84c" alt="View Live Demo" width="300"/>
-  </a>
-  <br>
-  <em>Click the image or button to experience the generative art</em>
-</div>
-
-## 👕 Apparel Preview
-
-<div align="center">
-  <img src="Harmonic-Eccentricity.jpg" alt="Harmonic Eccentricity on T-Shirt" width="600" style="border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.3);"/>
-  <br>
-  <em>Harmonic Eccentricity artwork printed on a T-shirt</em>
-</div>
-
-## ✨ Features
-
-- **5 Shape Types** — Lines, arcs, triangles, rectangles, and bezier curves
-- **Radial Symmetry** — Layered, rotating geometric compositions
-- **Harmonic Colors** — HSL color harmony with shifting hues
-- **Dark Backgrounds** — Rich, dark color palettes
-- **Organic Patterns** — Random shape selection and placement
-- **Seed-Based** — Every composition is unique and reproducible via its seed
-- **Save & Share** — Download as PNG with seed in filename
-- **Apparel Mode** — Preview artwork on a T-shirt mockup
-- **Responsive** — Works on desktop, tablet, and mobile
-- **Pure JavaScript** — No external dependencies
-- **Keyboard Shortcuts**:
-  - `R` — Regenerate
-  - `S` — Save image
-  - `T` — Toggle apparel view
-
-## 🎨 Artwork Details
-
-| Parameter | Range | Description |
-|-----------|-------|-------------|
-| **Shape Types** | 5 options | Line, Arc, Triangle, Rectangle, Bezier |
-| **Layers** | 5–9 | Concentric radial layers |
-| **Segments** | 20–50 | Shapes per layer |
-| **Background Colors** | 100+ | Dark HSL color palette |
-| **Hue Shift** | 0–360 | Harmonic color variation |
-
-## 🎯 Shape Types
-
-| Shape | Description |
-|-------|-------------|
-| **Line** | Simple radial line segments |
-| **Arc** | Curved arc segments |
-| **Triangle** | Geometric triangular forms |
-| **Rectangle** | Small rectangular marks |
-| **Bezier** | Flowing bezier curves |
-
-## 🚀 Quick Start
-
-### Local Development
-
-```bash
-# Clone the repository
-git clone https://github.com/reyrove/Harmonic-Eccentricity-Generative-Art.git
-
-# Navigate to the directory
-cd Harmonic-Eccentricity-Generative-Art
-
-# Open in browser
-open index.html
-# or use a live server
-```
-
-### Deploy to GitHub Pages
-
-1. Push to GitHub
-2. Go to Settings → Pages
-3. Select branch `main` and root folder
-4. Your site will be live at `https://reyrove.github.io/Harmonic-Eccentricity-Generative-Art`
-
-## 🧠 How It Works
-
-The artwork is generated using a deterministic random number generator, seeded by timestamp + random noise. Every refresh:
-
-1. **Setup**:
-   - Random dark background from HSL palette
-   - 5-9 layers of shapes
-   - 20-50 segments per layer
-   - Random base hue for color harmony
-
-2. **Shape Generation**:
-   - Each segment gets a random shape type
-   - Shapes placed radially around center
-   - Colors shift harmoniously with position and layer
-
-3. **Rendering**:
-   - Dark background
-   - Shapes drawn with varying opacity
-   - Organic, radial composition
-
-## 📁 File Structure
-
-```
-Harmonic-Eccentricity-Generative-Art/
-├── index.html                  # Main application (all-in-one)
-├── Harmonic-Eccentricity.jpg   # T-shirt mockup image
-├── fav.svg                     # Favicon
-├── demo-screenshot.jpg         # Website demo screenshot
-├── README.md                   # This file
-└── LICENSE                     # MIT License
-```
-
-## 🛠️ Tech Stack
-
-- **Pure Vanilla HTML/CSS/JS** — No dependencies
-- **Canvas API** — 2D rendering
-- **HSL Color Model** — Color generation
-- **CSS Flexbox/Grid** — Responsive layout
-- **GitHub Pages** — Hosting
-
-## 🎯 Interactive Controls
-
-| Action | Keyboard | Button |
-|--------|----------|--------|
-| Regenerate | `R` | Click "regenerate" |
-| Save Image | `S` | Click "regenerate" |
-| Toggle Apparel | `T` | Click "apparel" |
-
-## 🎨 The Creative Process
-
-### Harmonic Colors
-Colors are generated using HSL (Hue, Saturation, Lightness) with harmonious shifts:
-- Base hue determines the overall color direction
-- Each shape shifts hue based on angle and layer
-- Saturation and lightness vary for depth
-
-### Radial Composition
-Shapes are arranged in concentric layers:
-- Each layer has a different radius
-- Shapes rotate around the center
-- Random shape selection creates organic variety
-
-### Dark Backgrounds
-Rich, dark backgrounds provide contrast and make the colorful shapes pop, creating a dramatic and elegant aesthetic.
-
-## 📱 Responsive Design
-
-The application automatically adapts to:
-- Desktop screens
-- Tablets
-- Mobile phones
-- Landscape orientation
-- Various aspect ratios
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to:
-- Fork the repository
-- Create a feature branch
-- Submit a pull request
-
-### Ideas for Contributions:
-- New shape types
-- Additional color palettes
-- Animation features
-- Interactive controls
-- Performance optimizations
-
-## 📄 License
-
-MIT License — see [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- Inspired by hue harmony and generative art
-- Pure JavaScript implementation
-- Special thanks to the creative coding community
+> A seed-based generative system for hue-harmonised ring compositions.  
+> A reproducible catalogue of computational colour studies.
 
 ---
 
-**Built with ❤️ and harmonic eccentricity**
+## What is this?
+
+**Harmonic Eccentricity** is a generative design system that arranges five fundamental shapes — a line, an arc, a triangle, a rectangle, a bezier curve — around concentric rings. Each shape is placed at a precise angle, and each receives a hue offset from its ring's base. The result reads as harmony, though nothing in it is symmetrical.
+
+Every artwork in this catalogue is defined by a single numeric seed. The same seed always produces the identical composition — making each piece **traceable, reproducible, and licensable** across textile, print, and apparel applications.
+
+Named for the tension between *harmony* (hue relationships that hold) and *eccentricity* (shapes that never quite align), the system renders that tension visible.
+
+---
+
+## Live
+
+🌐 **[View the catalogue →](https://reyrove.github.io/Harmonic-Eccentricity/)**
+
+---
+
+## The System
+
+The generator combines two layers:
+
+| Layer | Description |
+|-------|-------------|
+| **Concentric rings** | Five to nine circles, each carrying its own radius and rotation offset. |
+| **Hue harmony** | Each shape receives a hue offset from its ring's base — a slowly rotating colour relationship. |
+
+Both layers are driven by the same seed, ensuring deterministic output.
+
+### Parameters
+
+- **Layer count** — 5 to 9 concentric rings
+- **Segment count** — 20 to 50 shapes per ring
+- **Shape types** — 5 (line, arc, triangle, rectangle, bezier)
+- **Background hue** — randomised dark HSL
+- **Base hue** — randomised, drifting per shape and ring
+- **Saturation / Lightness** — bounded ranges per shape
+
+---
+
+## Structure
+
+```
+Harmonic-Eccentricity/
+├── index.html                    ← Full catalogue (single-file)
+├── images/
+│   ├── fav.svg
+│   ├── harmonic-tote.png
+│   ├── harmonic-cushion.png
+│   └── ...
+├── Harmonic-Eccentricity.jpg     ← Apparel mockup
+└── README.md
+```
+
+The entire project is contained in a single `index.html` — no build step, no dependencies, no framework. Open it in any modern browser.
+
+---
+
+## Features
+
+- **Seed-based generation** — every composition is deterministic and reproducible
+- **Live catalogue** — cover, statement, plate, surfaces, process, archive, commission sections
+- **Multiple surfaces** — print, scarf, textile, wallpaper — all rendered from the same seed
+- **Archive of 8 seeds** — click any plate to load it into the main view
+- **PNG export** — download any composition directly from the browser
+- **Keyboard shortcuts** — `R` for new seed, `S` to save
+- **Legal modal** — licensing, terms, and credits built in
+- **Responsive** — works on desktop, tablet, and mobile
+- **Mobile-first navbar** — horizontally scrollable with fade hint
+
+---
+
+## Usage
+
+### Generate a new composition
+
+Click **New Seed** or press `R`.
+
+### Download the current composition
+
+Click **Download** or press `S`.
+
+### Load a seed from the archive
+
+Click any plate in the **Archive** section.
+
+---
+
+## Color System
+
+Every composition is built from HSL colour, converted to RGB at draw time:
+
+- **Background** — a deep, desaturated hue drawn from the seed (lightness 5–20, saturation 30–70)
+- **Base hue** — the starting hue for the first ring
+- **Hue shift per shape** — `(baseHue + angle/2 + layer × 10) % 360`, producing a smooth sweep around the ring
+- **Saturation & lightness** — bounded per shape, giving each segment its own weight
+
+Each seed selects a unique combination — no two compositions share the same palette.
+
+---
+
+## Technical Notes
+
+- Pure vanilla JavaScript — no libraries
+- Canvas 2D rendering
+- Custom xorshift random generator for deterministic seeds
+- Device-pixel-ratio aware rendering
+- Fully static rendering — one seed produces one composition, no animation loops
+- Single `renderStatic()` function drives the cover, plate, framed print, all four surfaces, and all eight archive thumbnails
+- `prefers-reduced-motion` respected
+
+---
+
+## About
+
+**Harmonic Eccentricity** is a project by [Reyhaneh Daneshdoost](https://reyrove.github.io/) — an Iranian-born artist working at the intersection of classical textile logic and generative systems.
+
+The work begins with a simple observation: the woven surface — repetitive, mathematically structured, infinitely variable — has always been a form of computation, long before computers.
+
+**Harmonic Eccentricity** is an attempt to render that logic visible.
+
+> *Colour does not repeat — it returns, shifted by every ring it passes through.*
+
+---
+
+## Licensing
+
+All compositions are seed-documented and available for licensing across textile, surface, and apparel applications.
+
+For commercial use, custom editions, or exclusive rights:
+
+📧 **reyhanehdaneshdoost@gmail.com**
+
+See the **Licensing** section in the live catalogue for details.
+
+---
+
+## Links
+
+- 🌐 [Website](https://reyrove.github.io/)
+- 📷 [Instagram](https://www.instagram.com/rey._.rove/)
+- 💼 [LinkedIn](https://www.linkedin.com/in/reyhaneh-daneshdoost-730481160/)
+- 🐦 [X](https://x.com/reyrove)
+
+---
+
+## Credits
+
+**Design & Generative System**  
+Reyhaneh Daneshdoost
+
+**Typefaces**  
+Cormorant Garamond · DM Mono
+
+**Edition**  
+Harmonic Eccentricity — Autumn 2026
+
+---
+
+<p align="center">
+  <em>Generative Hue Harmony</em><br />
+  <sub>© Reyrove Studio · All compositions reproducible by seed</sub>
+</p>
